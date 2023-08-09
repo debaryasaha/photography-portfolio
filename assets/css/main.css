@@ -3267,12 +3267,10 @@ input, select, textarea {
 			position: fixed;
 			top: 0;
 			width: 100%;
-			margin: 0;
 		}
 
 		body.is-preload #wrapper.fade-in:before {
 			opacity: 1;
-			margin: 0;
 		}
 
 		@media screen and (orientation: portrait) {
@@ -3335,7 +3333,6 @@ input, select, textarea {
 
 		#intro h1, #intro h2, #intro h3, #intro h4, #intro h5, #intro h6 {
 			color: #ffffff;
-			margin: 0;
 		}
 
 		#intro blockquote {
@@ -3391,7 +3388,6 @@ input, select, textarea {
 		#intro h1 {
 			font-size: 5rem;
 			line-height: 1;
-			margin: 0;
 		}
 
 		#intro p {
@@ -3443,7 +3439,6 @@ input, select, textarea {
 			-ms-transform: translateY(2rem);
 			transform: translateY(2rem);
 			opacity: 0;
-			margin: 0;
 		}
 
 			body.is-preload #intro:not(.hidden) + #header + #nav {
