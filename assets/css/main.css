@@ -3261,7 +3261,7 @@ input, select, textarea {
 			background: #1e252d;
 			content: '';
 			display: block;
-			height: 50%;
+			height: 100%;
 			left: 0;
 			opacity: 0;
 			position: fixed;
@@ -3272,6 +3272,7 @@ input, select, textarea {
 
 		body.is-preload #wrapper.fade-in:before {
 			opacity: 1;
+			margin: 0;
 		}
 
 		@media screen and (orientation: portrait) {
@@ -3442,6 +3443,7 @@ input, select, textarea {
 			-ms-transform: translateY(2rem);
 			transform: translateY(2rem);
 			opacity: 0;
+			margin: 0;
 		}
 
 			body.is-preload #intro:not(.hidden) + #header + #nav {
