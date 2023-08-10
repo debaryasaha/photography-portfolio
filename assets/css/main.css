@@ -3520,6 +3520,7 @@ input, select, textarea {
 		position: relative;
 		text-align: center;
 		z-index: 2;
+		margin-top: -10rem;
 	}
 
 		#header input, #header select, #header textarea {
