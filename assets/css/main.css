@@ -2037,27 +2037,43 @@ input, select, textarea {
 
 /* Box */
 
-	.box {
-		border: solid 2px;
-		margin-bottom: 2rem;
-		padding: 1.5rem;
-	}
+	/* Box styling */
+.box {
+    border: solid 2px;
+    margin-bottom: 2rem;
+    padding: 1.5rem;
+}
 
-		.box > :last-child,
-		.box > :last-child > :last-child,
-		.box > :last-child > :last-child > :last-child {
-			margin-bottom: 0;
-		}
+.box > :last-child,
+.box > :last-child > :last-child,
+.box > :last-child > :last-child > :last-child {
+    margin-bottom: 0;
+}
 
-		.box.alt {
-			border: 0;
-			border-radius: 0;
-			padding: 0;
-		}
+.box.alt {
+    border: 0;
+    border-radius: 0;
+    padding: 0;
+}
 
-	.box {
-		border-color: #eeeeee;
-	}
+/* Adjust the height of the images container */
+.box.alt .col-4 {
+    height: 350px; /* Set the desired fixed height */
+}
+
+/* Make images fill the height and maintain aspect ratio */
+.box.alt .col-4 .image.fit img {
+    height: 100%;
+    width: auto;
+    display: block;
+    margin: 0 auto;
+}
+
+/* Border color for the box */
+.box {
+    border-color: #eeeeee;
+}
+
 
 /* Button */
 
