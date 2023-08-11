@@ -39,17 +39,17 @@
 
 			<div class="box alt">
 				<div class="grid">
-					<div class="grid-item"><img src="images/thc/img3.jpg" alt="" /></div>
-					<div class="grid-item"><img src="images/thc/img1.jpg" alt="" /></div>
-					<div class="grid-item"><img src="images/thc/img2.jpg" alt="" /></div>
+					<div class="col-4 image-container"><img src="images/thc/img3.jpg" alt="" /></div>
+					<div class="col-4 image-container"><img src="images/thc/img1.jpg" alt="" /></div>
+					<div class="col-4 image-container"><img src="images/thc/img2.jpg" alt="" /></div>
 					<!-- Break -->
-					<div class="grid-item"><img src="images/thc/img5.jpg" alt="" /></div>
-					<div class="grid-item"><img src="images/thc/img4.jpg" alt="" /></div>
-					<div class="grid-item"><img src="images/thc/img6.jpg" alt="" /></div>
+					<div class="col-4 image-container"><img src="images/thc/img5.jpg" alt="" /></div>
+					<div class="col-4 image-container"><img src="images/thc/img4.jpg" alt="" /></div>
+					<div class="col-4 image-container"><img src="images/thc/img6.jpg" alt="" /></div>
 					<!-- Break -->
-					<div class="grid-item"><img src="images/thc/img9.jpg" alt="" /></div>
-					<div class="grid-item"><img src="images/thc/img8.jpg" alt="" /></div>
-					<div class="grid-item"><img src="images/thc/img7.jpg" alt="" /></div>
+					<div class="col-4 image-container"><img src="images/thc/img9.jpg" alt="" /></div>
+					<div class="col-4 image-container"><img src="images/thc/img8.jpg" alt="" /></div>
+					<div class="col-4 image-container"><img src="images/thc/img7.jpg" alt="" /></div>
 				</div>
 			</div>
 
@@ -67,12 +67,13 @@
 
     <!-- Initialize Masonry -->
     		<script>
-        		var grid = document.querySelector('.grid');
-        		var masonry = new Masonry(grid, {
-           		itemSelector: '.grid-item',
-            		columnWidth: '.grid-item',
-            		gutter: 30, // Adjust this as needed
-        		});
+        		// Initialize Masonry after the page has loaded
+    			var grid = document.querySelector('.grid');
+    			var masonry = new Masonry(grid, {
+        		itemSelector: '.image-container',
+        		columnWidth: '.image-container',
+        		gutter: 20, // Adjust this value
+    			});
     		</script>
 
 	</body>
