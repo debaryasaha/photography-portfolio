@@ -2038,10 +2038,14 @@ input, select, textarea {
 /* Box */
 
 	/* Box styling */
+/* Box */
 .box {
     border: solid 2px;
     margin-bottom: 2rem;
     padding: 1.5rem;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 10px;
 }
 
 .box > :last-child,
@@ -2056,23 +2060,10 @@ input, select, textarea {
     padding: 0;
 }
 
-/* Adjust the height of the images container */
-.box.alt .col-4 {
-    height: 350px; /* Set the desired fixed height */
-}
-
-/* Make images fill the height and maintain aspect ratio */
-.box.alt .col-4 .image.fit img {
-    height: 100%;
-    width: auto;
-    display: block;
-    margin: 0 auto;
-}
-
-/* Border color for the box */
 .box {
     border-color: #eeeeee;
 }
+
 
 
 /* Button */
